@@ -1,0 +1,33 @@
+PHP Síncrono - 1.33s
+	Abriendo Archivo...
+	Hola Bienvenid@s al Curso de Node.js de Escuela Digital
+	Haciendo otra cosa
+
+Node Síncrono - 0.89s
+	Abriendo Archivo...
+	Hola Bienvenid@s al Curso de Node.js de Escuela Digital
+	Haciendo otra cosa
+
+Node Asíncrono - 0.83s (Callback Anónima)
+	Abriendo Archivo...
+	Haciendo otra cosa
+	Hola Bienvenid@s al Curso de Node.js de Escuela Digital
+
+Node Asíncrono - 0.7s (Callback Definida)
+	Abriendo Archivo...
+	Haciendo otra cosa
+	Hola Bienvenid@s al Curso de Node.js de Escuela Digital
+
+Node Asíncrona - 0.9s (con Promesas)
+	Abriendo Archivo...
+	Haciendo otra cosa
+	Hola Bienvenid@s al Curso de Node.js de Escuela Digital
+
+if (condicion) {
+	true;
+} else {
+	false;
+}
+
+//operador ternario
+return (condicion) ? true : false;
