@@ -11,8 +11,8 @@
 */
 'use strict';
 
-const Clock = require('./Clock'),
-	myData = require('./my-data'),
+const Clock = require('./../../../Downloads/ednode2016-master/01Core/Clock'),
+	myData = require('./../../../Downloads/ednode2016-master/01Core/my-data'),
 	cucu = new Clock();
 
 console.log(
