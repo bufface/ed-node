@@ -33,13 +33,13 @@ class TeamController {
       side: req.body.side
     };
 
-    tm.save(contacto, () => {res.redirect('/');});
+    tm.save(contacto, () => {res.redirect('/teams');});
   }
 
   delete(req, res, next) {
     let _id = req.params._id;
 
-    tm.delete(_id, () => res.redirect('/') );
+    tm.delete(_id, () => res.redirect('/teams') );
   }
 
   addForm(req, res, next) {

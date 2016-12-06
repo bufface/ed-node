@@ -5,10 +5,14 @@ block content
     h1.header= title
     img(src="indentation-war.png")
     article.item
+      h2 Bienvenido #{user}
+      br
+      a.button.show(href="/logout") Cerrar sesión
+    article.item
       div
         a.button.add(href="/agregar") Agregar
 
-      if (data.length)
+      if(data.length)
         table.table
           tr
             th Nombre
@@ -27,12 +31,11 @@ block content
                 a.button.edit(href="/editar/" + contacto._id) Editar
               td
                 form(method="post", action="/eliminar/" + contacto._id)
+                  input.button.delete(type="button", value="Eliminar", onclick="eliminar(this)")
                   input(type="hidden", name="_method", value="DELETE")
-                  input.button.delete(type="button", value="Eliminar", onClick="eliminar(this)")
         script.
           function eliminar(input) {
-            var deleteOk = confirm('¿Estás seguro de eliminar el registro?');
-
+            var deleteOk = confirm('¿Estás seguro de eliminar este registro?');
             return (deleteOk) ? input.parentNode.submit() : false;
           }
       else

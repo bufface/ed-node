@@ -12,3 +12,5 @@ router
   .get('/signin', ac.signInGet)
   .post('/signin', ac.signInPost)
   .get('/logout', ac.logOut)
+
+module.exports = router;
